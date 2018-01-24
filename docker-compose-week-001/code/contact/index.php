@@ -20,6 +20,7 @@
 			<li class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 			<li class="social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 			<li class="social"><a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+      <li class="social"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li> 
 		</ul>
 
   </body>
