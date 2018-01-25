@@ -2,16 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
- 	<link rel="stylesheet" href="css/style.css">
- 	<style>
-@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Raleway');
-</style>
-    <title>Cher Horowitz</title>
+    <title>PHP + WP: Week 2</title>
   </head>
   <body>
-    <?php echo "<h1>Cher Horowitz</h1>"; ?>
- 	<?php include "inc/nav.php" ?>
+   <?php 
 
-    <img src="img/featherhat.jpg" alt="Cher Horowitz">
+   		$snacks = array("Potato Chips", "Deep Fried", "Crunchy", "1817", "16.49");
+   		function eatChips($arrayToList){
+   			echo "<ul>";
+   			foreach ($arrayToList as $value) {
+   				echo "<li>$value</li>";
+   			}
+   			echo "</ul>";
+   		}
+
+   		eatChips($snacks);
+    ?>
   </body>
 </html>
