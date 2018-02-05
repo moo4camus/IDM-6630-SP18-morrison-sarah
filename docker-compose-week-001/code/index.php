@@ -6,18 +6,29 @@
  	<style>
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto');
 </style>
-    <title>Wow, News</title>
+    <title>Wow, That's News</title>
   </head>
   <body>
-    <?php
+   <h1>Wow, That's News</h1>
+  <?php
+    
+    include "inc/nav.php";
+      
+      $section = $_GET ['section'];
+      $article = $_GET ['article'];
 
-      //Section//
+      if (isset($_GET['article']) && isset($_GET['section'])) {
+        include 'inc/article/' . $article . '/article-template.php';}
 
-    $section = $_GET ['section'];
 
-    if ($section == 'music') {
-      include 'inc/section/music/section-template.php';}
+        if (isset($_GET['article'])) {
+        include 'inc/article/' . $article . '/article-template.php';}
+          
 
-    ?>
+        if (isset($_GET['section'])) {
+        include 'inc/section/' . $section . '/section-template.php';}
+          
+        
+  ?>
   </body>
 </html>
