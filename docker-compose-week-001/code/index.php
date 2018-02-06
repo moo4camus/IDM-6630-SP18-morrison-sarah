@@ -9,8 +9,9 @@
     <title>Wow, That's News</title>
   </head>
   <body>
-   <h1>Wow, That's News</h1>
+   
   <?php
+    echo "<h1>Wow, That's News</h1>";
     
     include "inc/nav.php";
       
@@ -21,13 +22,17 @@
         include 'inc/article/' . $article . '/article-template.php';}
 
 
-        if (isset($_GET['article'])) {
+        else if (isset($_GET['article'])) {
         include 'inc/article/' . $article . '/article-template.php';}
           
 
-        if (isset($_GET['section'])) {
+        else if (isset($_GET['section'])) {
         include 'inc/section/' . $section . '/section-template.php';}
-          
+  
+
+        else {
+          include 'inc/home.php';
+        }
         
   ?>
   </body>

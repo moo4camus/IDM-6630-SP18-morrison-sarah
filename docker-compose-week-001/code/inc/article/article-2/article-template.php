@@ -1,4 +1,4 @@
-<h2>Interpret at Will...Lady Gage</h2>
+<h2>Interpret at Will...Lady Gaga</h2>
 
 <img src="img/ladygaga.jpg" alt="lady gaga">
 
